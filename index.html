@@ -32,36 +32,35 @@
   <div class="form-number-date">
     <div class="date">
       <div class="form-a"><pre>Form No:</pre></div> 
-       <div class="form-b">L3328381</div>
+       <div class="form-b"><input type="text" placeholder="L3328381" maxlength="8"></div>
         </div>
-        
         <div class="date-d">
             <label for="Date">
                 <div class="dob-inputs">
                     <p>Date :</p> 
-                  <div class="dob-group" style="margin-left: 5px;">
-                    <input type="text" placeholder="D">
+                  <div class="dob-group" style="margin-left: 1px;">
+                    <input type="text" placeholder="D" maxlength="1">
                   </div>
                   <div class="dob-group">
-                    <input type="text" placeholder="D">
+                    <input type="text" placeholder="D" maxlength="1">
                   </div>  
                   <div class="dob-group">
-                    <input type="text" placeholder="M">
+                    <input type="text" placeholder="M" maxlength="1">
                   </div>
                   <div class="dob-group">
-                    <input type="text"  placeholder="M">
+                    <input type="text"  placeholder="M" maxlength="1">
                   </div> 
                   <div class="dob-group">
-                    <input type="text" placeholder="Y">
+                    <input type="text" placeholder="Y" maxlength="1">
                   </div>
                   <div class="dob-group">
-                    <input type="text"  placeholder="Y">
+                    <input type="text"  placeholder="Y" maxlength="1">
                   </div>
                   <div class="dob-group">
-                    <input type="text"  placeholder="Y">
+                    <input type="text"  placeholder="Y" maxlength="1">
                   </div>
                   <div class="dob-group">
-                    <input type="text"  placeholder="Y">
+                    <input type="text"  placeholder="Y" maxlength="1">
                   </div>
                 </div>
              </label>
@@ -353,7 +352,7 @@
             </div>
             
              <div class="mother-title"><div class="mother-p"><p><h4>Mother Tongue</h4><sup>*</sup>:</p></div> 
-             <input type="text" class="mother-input"></div>
+             <input type="text" class="mother-input" style=" padding-left: 5px;"></div>
           </div>
  
                    <!--        Adhar Card          -->
@@ -440,22 +439,22 @@
          <div class="dob-inputs">
      
         <div class="dob-group">
-          <input type="text">
+          <input type="text" maxlength="1">
         </div>
         <div class="dob-group">
-          <input type="text">
+          <input type="text" maxlength="1">
         </div>
         <div class="dob-group">
-          <input type="text">
+          <input type="text" maxlength="1">
         </div>
         <div class="dob-group">
-          <input type="text">
+          <input type="text" maxlength="1">
         </div>
         <div class="dob-group">
-          <input type="text">
+          <input type="text" maxlength="1">
         </div>
         <div class="dob-group">
-          <input type="text">
+          <input type="text" maxlength="1">
         </div>
       </div> 
        </div>
@@ -688,7 +687,7 @@
          
           </div>
       </div>
-    <!--       Container Six         -->
+    <!--       Container Ninth         -->
  
     <div class="container-ninth">
       <div class="container-image">
@@ -740,17 +739,48 @@
               application form matches with the copy of "proof of identity" attached herewith by me. I undertake to carry this proof in person at the time of appearing for final online examination. I have read and understood the information about course and instructions given on www.mkcl.org and I will abide by them.
             </p>
           </div>
-          <div class="signature">
-            <div class="signaure-a">
-              <p>Signature of Applicant<sup>*</sup></p>
-            </div>
-          </div>             
-          <div class="signature-b">
-            <div class="signaure-ba">
-              <p>Parent/Guardians Signature<sup>*</sup></p>
-              <p class="rp">(in case of Applicant is Minor)</p>
-            </div>
-          </div> 
+        <!-- First Signature Section -->
+<div class="clickable-div" id="clickableDiv1">
+  <div class="signature-label">
+    <p>Signature of Applicant<sup>*</sup></p>
+  </div>
+  <div class="signature-placeholder" id="placeholder1">
+    <!-- Placeholder for signature image -->
+  </div>
+ 
+</div>
+
+<div class="modal" id="signatureModal1">
+  <div class="modal-content">
+    <h3>Sign Here</h3>
+    <canvas id="signatureCanvas1" width="300" height="100"></canvas>
+    <button onclick="saveSignature('placeholder1', 'signatureModal1', 'signatureCanvas1')">Save</button>
+    <button onclick="clearCanvas('signatureCanvas1')">Clear</button>
+    <button onclick="closeModal('signatureModal1')">Cancel</button>
+  </div>
+</div>
+
+<!-- Second Signature Section -->
+<div class="clickable-div" id="clickableDiv2">
+  <div class="signature-label">
+    <p>Parent/Guardians Signature<sup>*</sup></p>
+    <p class="sign-c">(in case of Applicant is Minor)</p>
+  </div>  
+  <div class="signature-placeholder" id="placeholder2">
+    <!-- Placeholder for signature image -->
+  </div>
+  
+</div>
+
+<div class="modal" id="signatureModal2">
+  <div class="modal-content">
+    <h3>Sign Here</h3>
+    <canvas id="signatureCanvas2" width="300" height="100"></canvas>
+    <button onclick="saveSignature('placeholder2', 'signatureModal2', 'signatureCanvas2')">Save</button>
+    <button onclick="clearCanvas('signatureCanvas2')">Clear</button>
+    <button onclick="closeModal('signatureModal2')">Cancel</button>
+  </div>
+</div>
          </div>
      
                 </div>
@@ -759,7 +789,6 @@
   </div>
     </div>
       </div>
-
 
       <script src="index.js">
       

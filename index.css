@@ -122,20 +122,7 @@
    
   
       
-        /*    Block    */
-  
-       .block {
-      background-color: #b87fabd3;
-      height: auto;
-      width: 100%;
-      font-size: 0.85rem;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-top: 4px;
-      padding-bottom: 4px;
-  }
+     
   .header .form-a {
      display: flex;
      align-items: center;
@@ -144,7 +131,17 @@
   .header .form-a pre {
      font-weight: 700;
   }
-  
+  .form-b input {
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    padding-left: 2px;
+  }
+  .form-b input:focus {
+    outline: none;
+    border: 1.5px rgba(0, 0, 255, 0.315) solid;
+  }
              /*    FORM NO & DATE    */
   .header .date {
       display: flex;
@@ -156,7 +153,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid rgb(255, 122, 255);
+      border: 1.7px solid rgb(255, 122, 255);
   }
   .form-number-date {
       position: absolute;
@@ -167,9 +164,22 @@
   }
   .header .date-d p {
       font-weight: bolder;
-  }
+     }
 
-
+   /*    Block    */
+  
+   .block {
+    background-color: #b87fabd3;
+    height: auto;
+    width: 100%;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
      /*    TOP CONTEAINER    */
      .top-contener {
         height: auto;
@@ -1001,180 +1011,78 @@ flex-wrap: wrap;
     border: 1.5px solid rgb(255, 0, 255);
     padding: 18px 5px 32px 5px;
    }
-   .container-ninth  .signaure-a {
-    position: relative;
-    top:22px
-   }
-   .container-ninth  .signature-b {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    width: 17%;
-    font-size: 14px;
-    padding: 15px 5px 25px 5px;
-    border: 1.5px solid rgb(255, 0, 255);
-    position: relative;
-   }
-   .container-ninth  .signaure-ba {
-    position: relative;
-    top: 23px;
-   }
-   .signaure-ba .rp {
-    font-size: 10px;
-    text-align: center;
-   }
-       /* ---------------------------------------------------------------------------------------------------------------- */
-   @media screen and (min-width: 200px) and
-  (max-width:500px) {   
-    sup {
-      font-size: 8px;
+                     /*           CLICKABLE-DIV           */
+
+  .clickable-div {
+      width: 15%;
+      height: 75px;
+      margin-top: 3px;
+      display: flex;
+      flex-direction: column-reverse; /* Name at the bottom, signature at the top */
+      justify-content: space-between; 
+      align-items: center;
+      position: relative;
+      font-size: 15px;
+      border: 1.5px solid rgb(255, 0, 255);
+      overflow: hidden; /* Ensure content fits inside the div */
+      cursor: pointer;
     }
-    .dob-inputs input {
+
+    /* Placeholder for signature image */
+    .signature-placeholder img {
+      display: block;
+      min-width: 100%;
+      max-height:50px;
+      object-fit: contain;
+      margin: 0;
+     }
+
+    /* Style for the text label (signature description) */
+    .signature-label {
+      font-size: 11.7px;
+      text-align: center;
+      margin-bottom: 2px;
+    }
+    .signature-label .sign-c {
       font-size: 10px;
     }
-    input {
-      border:  #cf7ebcd3 1px solid;
-      }
-    .header  {
-      accent-color: green; 
-  }
-    .top-contener  input[type="checkbox"] {
-      cursor: pointer;
-      height: 10px;
-      width: 10px;
-     }
-     input[type="checkbox"] {
-      cursor: pointer;
-      height: 18px;
-      width: 18px;
-     }
-     .header input[type="checkbox"] {
-      cursor: pointer;
-      height: 10px;
-      width: 10px;
-     }
-       
-    input[type="checkbox"]:hover {
-    outline: 1px solid rgb(255, 74, 231); 
-    outline-offset: -2px; 
-   }
-          
-  body {
-     border:  rgb(0, 0, 0) solid 2px;
-   }
-
-/*   HEADER   */
-
-.header {
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
- 
-}
-        /*   MKCL-LOGO    */
-
-        
-.mkcl-image {
-  height: 45px;
-  width: 45px;
-  border: 1px solid rgba(1, 52, 72, 0.187);
-  position: absolute;
-  left: 5px;
-}
-.header .mkcl-logo{
-  height: 42px;
-  width: 43px;
-}
-  /*    CONTEN AF TITLE    */
-  .header .conten {
-    width: 470px;
-    text-align: center;
-    padding-top: 20px;
-  }
-        /*   APPLICATION FROM   */
-.header .form {
-    text-align: center;
-    background-color: rgb(255, 111, 0);
-    color: white;
-    font-size: 1rem;
-    font-weight: 400;
-    border-radius: 30px;
-    width: 150px;
-    padding: 5px;
-    visibility: hidden;
-}
-.header .form-pooj {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -2px;
-}
-.header .dob-inputs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5px; /* Space between groups (Day, Month, Year) */
-    padding-top: 7px;
-  
-  }
-  .header .dob-inputs p {
-    font-size: 8px;
-  }
-  .header .dob-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
- 
-  .header .dob-group input {
-    width: 8px;
-    height: 8px;
-    text-align: center;
-    font-size: 6px;
-  }
- 
-      /*    TITLE   */
-      .header .title {
-    line-height: 15px;
-    font-size: 0.40rem;
-    font-weight: bold;
-    visibility: hidden;
-}
-
-.header .all-title {
-    margin-top: 10px;
-}
-                                  /*    FORM NO & DATE    */
-.header .date {
-  justify-content: start;
-  margin-left: 1px;
- }
-.form-number-date {
-  position: absolute;
-  right: 5px;
-  
-  width: 100px;
-}
-.header .form-a {
-  margin-right: 2px;
-  font-size: 10px;
- 
-}
-.header .form-a pre {
-  font-size: 7px;
-}
-.header .form-b {
-    width: 50px;
-    height: 15px;
-    font-size: 10px;
-    border: 1px solid rgb(255, 122, 255);
-  }
-.header .date-d {
-    font-size: 10px;
-}
-      /*    Block    */
-
-      .block {
-        font-size: 0.65rem;
-      }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
     }
+
+    .modal-content {
+      background: rgb(120, 235, 255);
+      padding: 25px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    canvas {
+      border: 2px solid #000000be;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+   
+  
