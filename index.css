@@ -1015,3 +1015,157 @@ flex-wrap: wrap;
     font-size: 10px;
     text-align: center;
    }
+ @media screen and (min-width: 200px) and
+  (max-width:500px) {   
+    sup {
+      font-size: 8px;
+    }
+    .dob-inputs input {
+      font-size: 10px;
+    }
+    input {
+      border:  #cf7ebcd3 1px solid;
+      }
+    .header  {
+      accent-color: green; 
+  }
+    .top-contener  input[type="checkbox"] {
+      cursor: pointer;
+      height: 10px;
+      width: 10px;
+     }
+     input[type="checkbox"] {
+      cursor: pointer;
+      height: 18px;
+      width: 18px;
+     }
+     .header input[type="checkbox"] {
+      cursor: pointer;
+      height: 10px;
+      width: 10px;
+     }
+       
+    input[type="checkbox"]:hover {
+    outline: 1px solid rgb(255, 74, 231); 
+    outline-offset: -2px; 
+   }
+          
+  body {
+     border:  rgb(0, 0, 0) solid 2px;
+   }
+
+/*   HEADER   */
+
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+        /*   MKCL-LOGO    */
+
+        
+.mkcl-image {
+  height: 45px;
+  width: 45px;
+  border: 1px solid rgba(1, 52, 72, 0.187);
+  position: absolute;
+  left: 5px;
+}
+.header .mkcl-logo{
+  height: 42px;
+  width: 43px;
+}
+  /*    CONTEN AF TITLE    */
+  .header .conten {
+    width: 470px;
+    text-align: center;
+    padding-top: 20px;
+  }
+        /*   APPLICATION FROM   */
+.header .form {
+    text-align: center;
+    background-color: rgb(255, 111, 0);
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 30px;
+    width: 150px;
+    padding: 5px;
+    visibility: hidden;
+}
+.header .form-pooj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2px;
+}
+.header .dob-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5px; /* Space between groups (Day, Month, Year) */
+    padding-top: 7px;
+  
+  }
+  .header .dob-inputs p {
+    font-size: 8px;
+  }
+  .header .dob-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .header .dob-group input {
+    width: 8px;
+    height: 8px;
+    text-align: center;
+    font-size: 6px;
+  }
+ 
+      /*    TITLE   */
+      .header .title {
+    line-height: 15px;
+    font-size: 0.40rem;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+.header .all-title {
+    margin-top: 10px;
+}
+                                  /*    FORM NO & DATE    */
+.header .date {
+  justify-content: start;
+  margin-left: 1px;
+ }
+.form-number-date {
+  position: absolute;
+  right: 5px;
+  
+  width: 100px;
+}
+.header .form-a {
+  margin-right: 2px;
+  font-size: 10px;
+ 
+}
+.header .form-a pre {
+  font-size: 7px;
+}
+.header .form-b {
+    width: 50px;
+    height: 15px;
+    font-size: 10px;
+    border: 1px solid rgb(255, 122, 255);
+  }
+.header .date-d {
+    font-size: 10px;
+}
+      /*    Block    */
+
+      .block {
+        font-size: 0.65rem;
+      }
+    }
